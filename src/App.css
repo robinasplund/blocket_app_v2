@@ -1,0 +1,76 @@
+
+* {
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+
+.bordish{
+  border:solid black 1px;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+/*-----------------NAVBAR-----------------*/
+.NavbarComponent{
+  width:100%;
+  position:fixed;
+}
+.Sidebar{
+  width: 200px;
+  position: fixed;
+}
+.Sidebar p{
+  color: #818181;
+  transition: 0.3s;
+}
+.Sidebar p:hover{
+  color: #f1f1f1;
+}
+
+.NavbarButton{
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.NavbarButton:hover .bar1, 
+.NavbarButton:hover .bar2,
+.NavbarButton:hover .bar3,
+.NavbarButton:hover .bar4,
+.NavbarButton:hover .bar5,
+.NavbarButton:hover .bar6{
+  background-color: #f1f1f1;
+}
+.bar1, .bar2, .bar3, .bar4, .bar5, .bar6 {
+  width: 35px;
+  height: 5px;
+  background-color: #818181;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.bar4 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.bar5 {opacity: 0;}
+.bar6 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+
+input[type="text"]:focus{
+
+  border-color: rgb(255, 255, 255);
+  /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6);*/
+  outline: 0 none;
+}
+
